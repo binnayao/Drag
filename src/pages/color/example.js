@@ -10,6 +10,7 @@ export default class componentName extends Component {
     visible: true
   }
   componentDidMount = () => {
+    cookie.set('colorFirstEnter', 0)
     if (cookie.get('colorFirstEnter') === '1')
       return;
     let nihao = setTimeout(() => {
@@ -47,7 +48,7 @@ export default class componentName extends Component {
   }
 
   render() {
-    if (cookie.get('colorFirstEnter') === '1')
+    if (false && cookie.get('colorFirstEnter') === '1')
       return <div></div>
     else
       return (
