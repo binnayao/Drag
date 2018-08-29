@@ -1,9 +1,6 @@
 
 // 容器组件
 import React from 'react';
-import { hashHistory } from 'react-router';
-import api from '../util/api.js';
-import post from '../util/request.js';
 
 export default class App extends React.Component {
   render() {
