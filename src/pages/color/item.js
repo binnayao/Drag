@@ -72,7 +72,6 @@ export default class componentName extends Component {
     document.getElementById('colorItem' + i + this.props.index).setAttribute('class', 'flex1 row mainCenter subCenter absolute')
     let nowX = e.pageX || e.touches[0].pageX;
     let nowY = e.pageY || e.touches[0].pageY;
-    console.log(e.touches[0])
     // 移上去的时候, 选框背景色开始
     let { move } = this.state;
     for (let k = 0; k < 4; k++) {
